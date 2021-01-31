@@ -13,3 +13,11 @@
  *= require_tree .
  *= require_self
  */
+
+body {
+  background-image: radial-gradient(
+    circle farthest-corner at 10% 20%,
+    rgba(255, 229, 168, 1) 0%,
+    rgba(251, 174, 222, 1) 100.7%
+  );
+}

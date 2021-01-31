@@ -1,0 +1,28 @@
+<nav class="nav_container ">
+  <ul class="nav_container__list  d-flex mt-2">
+    <li class="nav_container_list__item d-inline-flex mx-3">
+    <% if current_page?("/basics") %>
+      <%= link_to "Home",  "/basics", class: "text-decoration-none btn-primary btn"%>
+    <% else %>
+      <%= link_to "Home",  "/basics", class: "text-decoration-none btn-outline-primary btn"%>
+    <% end %>
+    </li>
+    <li class="nav_container_list__item d-inline-flex mx-3">
+      <% if current_page?("/ruby") %>
+        <%= link_to "Ruby",  "/ruby", class: "text-decoration-none btn-primary btn"%>
+
+      <% else %>
+        <%= link_to "Ruby",  "/ruby", class: "text-decoration-none btn-outline-primary btn"%>
+      <% end %>
+    </li>
+    <li class="nav_container_list__item d-inline-flex mx-3">
+      <% if current_page?("/git") %>
+        <%= link_to "Git",  "/git", class: "text-decoration-none btn-primary btn"%>
+
+      <% else %>
+        <%= link_to "Git",  "/git", class: "text-decoration-none btn-outline-primary btn"%>
+      <% end %>
+
+    </li>
+  </ul>
+</nav>
